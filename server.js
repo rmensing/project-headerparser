@@ -39,7 +39,7 @@ var ipadress = req.clientIp;
 var language = req.acceptsLanguages();
 var software=req.get('User-Agent');
     res.json({
-      ipadress: ipadress,
+      ipaddress: ipadress,
       language:language[0],
       software:software.slice(software.indexOf("(") + 1, software.indexOf(")"))
     });
